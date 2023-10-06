@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class CameraController : MonoBehaviour{
-    public GameObjectplayer;
+    public GameObject player;
     private Vector3offset;
 
     void Start(){
@@ -13,3 +13,4 @@ public class CameraController : MonoBehaviour{
     void LateUpdate(){
         transform.position = player.transform.position + offset;
     }
+}
